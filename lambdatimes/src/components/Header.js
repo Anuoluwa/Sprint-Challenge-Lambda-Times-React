@@ -1,10 +1,8 @@
-import React from 'react';
-import styled, {css} from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
-
-// Refactor this component to use styled components and not classNames. 
+// Refactor this component to use styled components and not classNames.
 // You can find the corresponding CSS in the CSS/index.css file
-
 
 const StyledHeader = styled.div`
   display: flex;
@@ -33,25 +31,26 @@ const StyledHeader = styled.div`
 `;
 
 const StyledHeaderSpan = styled.div`
-   align-self: flex-end;
-   font-size: 11px;
-   font-weight: bold;
-   letter-spacing: 1px;
+  align-self: flex-end;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
 
-   ${props => props.date && css`
-    margin-left: 25px;
-    flex: 1;
-  `}
+  ${props =>
+    props.date &&
+    css`
+      margin-left: 25px;
+      flex: 1;
+    `}
 
-  ${props => props.temp && css`
-    text-align: right;
-  margin-right: 25px;
-  flex: 1;
-  `}
- 
+  ${props =>
+    props.temp &&
+    css`
+      text-align: right;
+      margin-right: 25px;
+      flex: 1;
+    `}
 `;
-
-
 
 const Header = () => {
   return (
@@ -60,7 +59,7 @@ const Header = () => {
       <h1>Lambda Times</h1>
       <StyledHeaderSpan temp>98°</StyledHeaderSpan>
     </StyledHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
