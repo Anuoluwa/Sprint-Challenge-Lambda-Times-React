@@ -28,4 +28,18 @@ A higher-order component (HOC) is an advanced technique in React for reusing com
 
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
 
-One the benefits of Styled Components is that external CSS files are global in scope and always leak in the entire codebase, therfore not helpful in scaling apps
+a. Inline styling
+b. External CSS sheets
+c. Style Components 
+
+a. Inline styling: There is no need to upload multiple files. HTML and CSS can be in the same file, there no http requests.
+Only one page is affected by stylesheet.
+
+b. External CSS sheets:
+    - Smaller size of HTML pages and cleaner structure.
+    - Faster loading speed.
+    - Same .css file can be used on multiple pages.
+
+c. Style Components 
+    - With styled-components, the user interface design focus shifts from just merely styling HTML elements or React components through className to defining styled components that contain their own styles and are so easily reusable across the entire project
+    - One the benefits of Styled Components is that external CSS files are global in scope and always leak in the entire codebase, therfore not helpful in scaling apps
