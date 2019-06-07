@@ -28,7 +28,7 @@ const Tabs = props => {
 // Make sure to use PropTypes to validate your types!
 Tabs.propTypes = {
   tabs: propTypes.arrayOf(propTypes.string).isRequired,
-  selectedTab: propTypes.string.isRequired,
+  selectedTab: propTypes.array.isRequired,
   selectTabHandler: propTypes.func.isRequired
 }
 
