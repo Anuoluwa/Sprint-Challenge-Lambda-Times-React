@@ -22,7 +22,7 @@ const Tab = props => {
 // Make sure you include PropTypes on your props.
 Tab.propTypes = {
   selectTabHandler: propTypes.func.isRequired,
-  selectedTab: propTypes.array.isRequired,
+  selectedTab: propTypes.string.isRequired,
   tab: propTypes.string.isRequired
 }
 
