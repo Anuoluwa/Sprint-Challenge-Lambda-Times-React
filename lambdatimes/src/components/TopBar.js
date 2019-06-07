@@ -18,7 +18,7 @@ const StyledTopBar = styled.div`
 
 const TopBar = () => {
   return (
-    <div className="top-bar">
+    <StyledTopBar>
       <div className="container">
         <div className="container-left">
           <span>TOPICS</span><span>SEARCH</span>
@@ -30,7 +30,7 @@ const TopBar = () => {
           <span>LOG IN</span>
         </div>
       </div>
-    </div>
+    </StyledTopBar>
   )
 }
 
